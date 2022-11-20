@@ -46,6 +46,10 @@ for x in range(settings.GRID_SIZE):
             column=x, row=y
         )
 
+Cell.create_cell_count_label(left_frame)
+Cell.cell_count_label_object.place(
+    x=50, y=50
+)
 
 # Run the window
 Cell.randomize_mines()
@@ -54,3 +58,4 @@ for c in Cell.all:
 root.mainloop()
 
 
+arv = list()
